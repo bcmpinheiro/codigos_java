@@ -18,6 +18,7 @@ public class valorDeCompra {
       System.out.println("Está barato, pode comprar");
     } else if (valor > 10 && valor < 15) {
       System.out.println("Você pode pedir um desconto!");
+      // valor >= 15 && valor < 17
     } else if (valor >= 15 && valor < 17) {
       System.out.println("Você pode pesquisar mais");
     } else {

@@ -1,7 +1,8 @@
 import java.util.Scanner;
 
 public class numeroPositivoOuNegativo {
-
+  // programa pede entrada de numero positivo ou negativo e retorna na tela os
+  // valores
   public static void main(String[] args) {
 
     Scanner scan = new Scanner(System.in);

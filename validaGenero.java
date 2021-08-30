@@ -11,13 +11,9 @@ public class validaGenero {
     String genero = scan.next();
     System.out.println("Seu genero é: " + genero);
 
-    if (genero.equals("M")) {
+    if (genero.equals("M") || (genero.equals("m"))) {
       System.out.printf("Seja Bem Vindo!");
-    } else if (genero.equals("m")) {
-      System.out.printf("Seja Bem Vindo!");
-    } else if (genero.equals("F")) {
-      System.out.printf("Seja Bem Vinda!");
-    } else if (genero.equals("f")) {
+    } else if (genero.equals("F") || (genero.equals("f"))) {
       System.out.printf("Seja Bem Vinda!");
     } else {
       System.out.println("Não é uma letra que corresponde a um genero válido neste caso!");

@@ -10,8 +10,10 @@ public class descontoSalario {
     double valorHoraTrabalhada = scan.nextDouble();
     System.out.println("Digite a quantidade de horas trabalhadas neste mês: ");
     double horaTrabalhada = scan.nextDouble();
-    double salario = scan.nextDouble(valorHoraTrabalhada * horaTrabalhada);
-    System.out.println(salario);
+    System.out.println(
+        "Você trabalhou: " + valorHoraTrabalhada + " horas e o valor de cada hora trabalhada é: " + horaTrabalhada);
+    double salario = (valorHoraTrabalhada * horaTrabalhada);
+    System.out.println("Valor do salário Bruto: " + salario);
 
     if (salario <= 900.00) {
       double salarioDesconto = salario - (salario * 0);

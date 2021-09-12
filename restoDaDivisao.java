@@ -9,7 +9,6 @@ public class restoDaDivisao {
     int numero01 = scan.nextInt();
 
     int divisao = (numero01 % 2);
-    System.out.println(divisao);
 
     if (divisao == 0) {
       System.out.println("Trata-se de um número par, pois sua divisão resultou em: " + divisao);

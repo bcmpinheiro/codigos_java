@@ -7,9 +7,11 @@ public class EncontreNumPrimos {
     System.out.println("Entre com um numero: ");
     int num = scan.nextInt();
 
+    boolean primo;
+
     for (int i = 1; i <= num; i++) {
 
-      boolean primo = true;
+      primo = true;
 
       for (int j = 2; j < i; j++) {
         if (i % j == 0) {

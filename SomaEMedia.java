@@ -21,5 +21,4 @@ public class SomaEMedia {
         System.out.println("Soma: "+ soma);
         System.out.println("Media: "+ media);
     }
-  }  
-}
+  }

@@ -5,15 +5,15 @@ public class TesteLampada {
     public static void main (String[] args) {
 
         Lampada estadoLampada = new Lampada();
+        estadoLampada.ligada = "ligada";
+        estadoLampada.desligada = "desligada";
+
+        System.out.println(estadoLampada.ligada);
+        System.out.println(estadoLampada.desligada);
 
         estadoLampada.exibirEstadoLampada();
 
-        boolean ligar = estadoLampada.ligarLampada(true);
-        boolean desligada = estadoLampada.ligarLampada(false);
-
-
-
-
-
+        boolean isEstadoLampadaLigada = estadoLampada.isEstadoLampada();
+        boolean isEstadoLampadaDesligada = estadoLampada.isEstadoLampada();
     }
 }

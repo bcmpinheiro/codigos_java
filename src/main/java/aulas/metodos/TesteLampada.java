@@ -13,7 +13,10 @@ public class TesteLampada {
 
         estadoLampada.exibirEstadoLampada();
 
-        boolean isEstadoLampadaLigada = estadoLampada.isEstadoLampada();
-        boolean isEstadoLampadaDesligada = estadoLampada.isEstadoLampada();
+        String estadoLampadaLigada = estadoLampada.lampadaLigada();
+        String estadoLampadaDesligada = estadoLampada.lampadaDesligada();
+
+        System.out.println("A lampada esta: " + estadoLampadaLigada);
+        System.out.println("A lampada esta: " + estadoLampadaDesligada);
     }
 }

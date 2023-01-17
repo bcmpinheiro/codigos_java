@@ -3,7 +3,6 @@ package src.main.java.aulas.metodos;
 public class Lampada {
 
     String cor;
-    boolean estadoLampada;
     String ligada;
     String desligada;
 
@@ -18,15 +17,15 @@ public class Lampada {
         System.out.println("A lampada esta: " + ligada);
     }
 
-    boolean isEstadoLampada() {
-        if (estadoLampada = true) {
+    public static String estadoLampada(String ligada, String desligada) {
+        if (estadoLampada("1", "2") == "1") {
             System.out.println("O metodo true foi chamado.");
             System.out.println("A lampada esta: ligada");
-            return true;
+            return ligada;
         } else {
             System.out.println("O metodo false foi chamado.");
             System.out.println("A lampada esta: desligada");
-            return false;
+            return desligada;
         }
     }
 }

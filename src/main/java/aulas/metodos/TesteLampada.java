@@ -4,19 +4,21 @@ public class TesteLampada {
 
     public static void main (String[] args) {
 
-        Lampada estadoLampada = new Lampada();
-        estadoLampada.ligada = "ligada";
-        estadoLampada.desligada = "desligada";
+        Lampada lampada = new Lampada();
 
-        System.out.println(estadoLampada.ligada);
-        System.out.println(estadoLampada.desligada);
+        lampada.ligar();
+        if (lampada.ligada) {
+            System.out.println("A lampada esta ligada");
+        } else {
+            System.out.println("A lampada esta desligada");
+        }
 
-        estadoLampada.exibirEstadoLampada();
 
-        String estadoLampadaLigada = estadoLampada.lampadaLigada();
-        String estadoLampadaDesligada = estadoLampada.lampadaDesligada();
-
-        System.out.println("A lampada esta: " + estadoLampadaLigada);
-        System.out.println("A lampada esta: " + estadoLampadaDesligada);
+        lampada.desligar();
+        if (lampada.ligada) {
+            System.out.println("A lampada esta ligada");
+        } else {
+            System.out.println("A lampada esta desligada");
+        }
     }
 }

@@ -7,18 +7,9 @@ public class TesteLampada {
         Lampada lampada = new Lampada();
 
         lampada.ligar();
-        if (lampada.ligada) {
-            System.out.println("A lampada esta ligada");
-        } else {
-            System.out.println("A lampada esta desligada");
-        }
-
+        lampada.mostrarEstado();
 
         lampada.desligar();
-        if (lampada.ligada) {
-            System.out.println("A lampada esta ligada");
-        } else {
-            System.out.println("A lampada esta desligada");
-        }
+        lampada.mostrarEstado();
     }
 }

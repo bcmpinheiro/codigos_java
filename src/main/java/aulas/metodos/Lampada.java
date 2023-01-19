@@ -11,7 +11,6 @@ public class Lampada {
     void desligar() {
         ligada = false;
     }
-
     void mostrarEstado() {
         if (ligada) {
             System.out.println("A lampada esta ligada");

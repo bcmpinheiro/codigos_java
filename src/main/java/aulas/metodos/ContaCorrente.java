@@ -2,29 +2,44 @@ package src.main.java.aulas.metodos;
 
 public class ContaCorrente {
 
-    int numero;
+    String numero;
+    String agencia;
     double saldo;
-    boolean contaEspecial;
-    double limite;
+    double limiteEspecial;
+    boolean especial;
+    double valorEspecialUsado;
 
-    double consultaSaldo() {
-        return saldo;
+    boolean realizarSaque(double quantiaASacar) {
+
+        //tem saldo na conta
+        if (saldo >= quantiaASacar) {
+            saldo -= quantiaASacar;
+            return true;
+        } else { //não tem saldo na conta
+            if (especial) {
+                //verificar se o limite epsecial tem saldo
+                double limite = limiteEspecial + saldo;
+                if (limite >= quantiaASacar) {
+                    saldo -= quantiaASacar;
+                    return true;
+                } else {
+                    return false;
+                }
+            } else {
+                return false; //não é especial e não tem saldo suficiente
+            }
+        }
     }
 
-    void validarContaEspecial() {
-        contaEspecial = true;
+    void depositar(double valorDepositado) {
+        saldo += valorDepositado;
     }
 
-    double realizarSaque(){
-        return saldo;
+    void consultarSaldo () {
+        System.out.println("Saldo atual da conta = " + saldo);
     }
 
-    double validarSeEstaUsandoLimite() {
-        return limite;
+    boolean verificarUsoChequeEspecial() {
+        return saldo < 0;
     }
-
-
-
-
-
 }

@@ -11,5 +11,8 @@ public class TesteLampada {
 
         lampada.desligar();
         lampada.mostrarEstado();
+
+        lampada.mudarEstado();
+        lampada.mostrarEstado();
     }
 }

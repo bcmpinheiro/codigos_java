@@ -5,14 +5,13 @@ public class TesteContaCorrente {
     public static void main(String[] args) {
 
         ContaCorrente contaCorrente = new ContaCorrente();
-        contaCorrente.numero = "12345";
-        contaCorrente.agencia = "1234";
-        contaCorrente.limiteEspecial = 500.00;
-        contaCorrente.especial = true;
-        contaCorrente.saldo = -10;
-        contaCorrente.valorEspecialUsado = 0.00;
+        contaCorrente.setAgencia("1234");
+        contaCorrente.setLimiteEspecial(500.00);
+        contaCorrente.setEspecial(true);
+        contaCorrente.setSaldo(-10);
+        contaCorrente.setValorEspecialUsado(0.00);
 
-        System.out.println("Saldo da conta " + contaCorrente.numero + " = " + contaCorrente.saldo);
+        System.out.println("Saldo da conta " + contaCorrente.getNumero() + " = " + contaCorrente.getSaldo());
 
         boolean saqueEfetuado = contaCorrente.realizarSaque(10.00);
 

@@ -11,36 +11,35 @@ public class TesteAluno {
         Aluno aluno = new Aluno();
 
         System.out.println("Entre com o nome do aluno: ");
-        aluno.nome = scan.nextLine();
+        aluno.setNome(scan.nextLine());
 
         System.out.println("Entre com o nome do curso que o aluno esta matriculado: ");
-        aluno.nomeCursoMatriculado = scan.nextLine();
+        aluno.setNomeCursoMatriculado(scan.nextLine());
 
         System.out.println("Entre com a matricula do aluno: ");
-        aluno.matricula = scan.nextLine();
+        aluno.setMatricula(scan.nextLine());
 
         //aluno.nomeDisciplinas = new String[3];
-        for (int i = 0; i < aluno.nomeDisciplinas.length; i++){
+        for (int i = 0; i < aluno.getNomeDisciplinas().length; i++){
             System.out.println("Entre com o nome da disciplina: " + i);
-            aluno.nomeDisciplinas[i] = scan.next();
+            aluno.setNomeDisciplinaPos(i, scan.next());
         }
 
-        for (int i = 0; i < aluno.notasDisciplinas.length; i++){
-            System.out.println("Obtendo notas da disciplina " + aluno.nomeDisciplinas[i]);
-            for (int j = 0; j < aluno.notasDisciplinas[i].length; j++){
+        for (int i = 0; i < aluno.getNotasDisciplinas().length; i++){
+            System.out.println("Obtendo notas da disciplina " + aluno.getNomeDisciplinas()[i]);
+            for (int j = 0; j < aluno.getNotasDisciplinas()[i].length; j++){
                 System.out.println("Entre com a nota " + (j+1));
-                aluno.notasDisciplinas[i] [j] = scan.nextDouble();
+                aluno.setNotasPosIJ(i, j, scan.nextDouble());
             }
         }
         aluno.mostrarInfoAluno();
 
-        for (int i = 0; i < aluno.nomeDisciplinas.length; i++){
+        for (int i = 0; i < aluno.getNomeDisciplinas().length; i++){
             if (aluno.verificarAprovado(i)){
-                System.out.println("Disciplina " + aluno.nomeDisciplinas[i] + " - foi aprovado!");
+                System.out.println("Disciplina " + aluno.getNomeDisciplinas()[i] + " - foi aprovado!");
             } else {
-                System.out.println("Disciplina " + aluno.nomeDisciplinas[i] + " - reprovado!");
+                System.out.println("Disciplina " + aluno.getNomeDisciplinas()[i] + " - reprovado!");
             }
         }
     }
-
 }

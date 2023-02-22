@@ -39,10 +39,33 @@ public class Curso {
         this.alunos = alunos;
     }
 
-    public String obterInfo(){
-        String info = "Nome do Curso = " + nome + "\n";
+    public String obterInfo() {
+        String info = "Nome do Curso = " + nomeCurso + "\n";
 
+        if (professor != null) {
+            info += professor.obterInfo();
+        }
 
-        return
+        if (alunos != null) {
+            System.out.println("---Alunos---");
+            for (Aluno aluno : alunos) {
+                if (aluno != null) {
+                    info += aluno.obterInfo();
+                    info += "\n";
+                }
+            }
+            info += "\nMedia da Truma = " + obterMediaTurma();
+        }
+        return info;
+    }
+
+    public double obterMediaTurma() {
+        double soma = 0;
+        for (Aluno aluno : alunos) {
+            if (aluno != null) {
+                soma += aluno.obterMedia();
+            }
+        }
+        return soma/alunos.length;
     }
 }

@@ -39,6 +39,8 @@ public class TesteCurso {
         Aluno[] alunos = new Aluno[5];
         for (int i = 0; i < 5; i++){
 
+            scan.nextLine();
+
             System.out.println("Entre com o nome do aluno " + (i + 1));
             String nomeAluno = scan.nextLine();
 
@@ -55,10 +57,13 @@ public class TesteCurso {
             aluno.setNomeAluno(nomeAluno);
             aluno.setMatriculaAluno(matAluno);
             aluno.setNotas(notas);
+
+            alunos[i] = aluno;
+
         }
 
         curso.setAlunos(alunos);
 
+        System.out.println(curso.obterInfo());
     }
-
 }

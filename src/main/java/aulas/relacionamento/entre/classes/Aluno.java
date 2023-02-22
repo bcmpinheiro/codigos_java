@@ -39,15 +39,15 @@ public class Aluno {
         this.alunos = alunos;
     }
 
-    public String obterInfo(){
-        return "Nome Aluno = " + nomeAluno + "; ";
+    public String obterInfo() {
+        String info = "Nome Aluno = " + nomeAluno + "; ";
         info += "Matricula = " + matriculaAluno + "; ";
         info += "Notas: ";
 
         double soma = 0;
         for (double nota : notas){
             soma += nota;
-            info += nota + " ";
+            info += nota + " ; ";
         }
         double media = soma/4;
         info += "\n" + "Media = " + media + " - ";
@@ -56,7 +56,14 @@ public class Aluno {
         } else {
             info += "Reprovado!";
         }
-
         return info;
+    }
+
+    public double obterMedia() {
+        double soma = 0;
+        for (double nota : notas){
+            soma += nota;
+        }
+        return soma/4;
     }
 }

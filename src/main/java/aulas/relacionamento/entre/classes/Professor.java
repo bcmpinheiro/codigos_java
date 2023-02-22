@@ -30,7 +30,7 @@ public class Professor {
         this.emailProfessor = emailProfessor;
     }
 
-    public String obterInfo(){
-        return "Professor = " + nomeProfessor;
+    public String obterInfo() {
+        return "Professor = " + nomeProfessor + "\n";
     }
 }

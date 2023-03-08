@@ -12,4 +12,9 @@ public class Circulo extends Figura2D{
         this.raio = raio;
     }
 
+    @Override
+    public double calcularArea() {
+        //return (raio * raio) * 3.14;
+        return (raio * raio) * Math.PI;
+    }
 }

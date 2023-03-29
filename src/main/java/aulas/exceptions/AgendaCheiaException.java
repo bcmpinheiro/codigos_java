@@ -4,6 +4,6 @@ public class AgendaCheiaException extends Exception {
 
     @Override
     public String getMessage() {
-        return "Agenda já está cheia!";
+        return "Agenda ja esta cheia!";
     }
 }

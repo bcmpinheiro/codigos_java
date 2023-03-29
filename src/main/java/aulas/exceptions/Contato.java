@@ -2,7 +2,6 @@ package src.main.java.aulas.exceptions;
 
 public class Contato {
 
-
     private static int contador = 0;
 
     private int id;

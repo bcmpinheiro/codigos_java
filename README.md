@@ -6,7 +6,7 @@ Esse repositório foi exclusivamente criado para armazenamento de exercicios pro
 
 A muito tempo eu buscava por um curso que tivesse muitos exercícios para fixação e encontrei nesse curso.
 
-Com essas aulas, realmente comecei a absorver melhor os conceitos da linguagem Java e a compreender suas complexidades.
+Com essas aulas, absorvi melhor os conceitos da linguagem Java e passei a compreender suas complexidades.
 
 
 ## Referência
